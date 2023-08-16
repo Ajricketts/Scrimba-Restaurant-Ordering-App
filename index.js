@@ -70,7 +70,7 @@ function getMenuHTML() {
                         <p class="price" id="price">$${menuItem.price}</p>
                     </div>
                     <button class="add-btn" id="add-btn">
-                        <img src="/add-btn.png" data-add-btn="${menuItem.id}">
+                        <img src="public/add-btn.png" data-add-btn="${menuItem.id}">
                     </button>
                 </div>
         ` 
