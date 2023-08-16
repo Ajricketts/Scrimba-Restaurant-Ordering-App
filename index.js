@@ -1,6 +1,7 @@
 import { menuArrayfromFile } from "/data.js"
 const menu = document.getElementById("menu")
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+// import addBtnImage from "./assets/add-btn.png?raw"
 
 let menuArray = JSON.parse(localStorage.getItem("menuArray"))
 let itemCart = []
@@ -69,7 +70,7 @@ function getMenuHTML() {
                         <p class="price" id="price">$${menuItem.price}</p>
                     </div>
                     <button class="add-btn" id="add-btn">
-                        <img src="/assets/add-btn.png" data-add-btn="${menuItem.id}">
+                        <img src="/add-btn.png" data-add-btn="${menuItem.id}">
                     </button>
                 </div>
         ` 
