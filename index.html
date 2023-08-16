@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       
+       <!-- Font Awesome -->
+       <script src="https://kit.fontawesome.com/4a9714449c.js" crossorigin="anonymous"></script>
+       <!-- Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="assets/header.png">
+        </header>
+        <div class="menu" id="menu">
+        </div>
+        <div class="order hidden" id="order">
+            <p class="order-title">Your Order</p>
+            <div class="order-items" id="order-items">
+            </div>
+            <hr>
+            <div class="total">
+                <p class="total-details">Total Price:</p>
+                <p id="total-price">$0</p>
+            </div>
+            <button class="complete-order" id="complete-order" data-complete="complete">Complete Order</button>
+        </div>
+        <div class="modal" id="modal">
+			<div class="close-modal-btn-container">
+				<button class="modal-close-btn" id="modal-close-btn" data-close-modal="close">X</button>
+			</div>
+            <p class="modal-title">Enter Card Details</p>
+			<div class="modal-inner" id="modal-inner">
+				<form id="payment-form">
+					<input type="text" name="name" placeholder="Enter your Name" required>
+					<input type="text" name="card" placeholder="Enter card number" required>
+					<input type="text" name="cvv" placeholder="Enter CVV" required>
+                    <button class="pay" id="pay" type="submit">Pay</button>			
+				</form>
+			</div>
+		</div>
+        <div id="show-thanks">
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
